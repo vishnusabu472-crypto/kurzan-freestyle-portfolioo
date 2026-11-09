@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KURZAN | Elite Football Freestyler & Performer</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Official portfolio of KURZAN – Elite Football Freestyler, Performer & Creative Athlete. More than a game. It's an art." />
+  <meta name="keywords" content="Kurzan, Football Freestyle, Freestyler, Soccer Tricks, ATW, Street Panna, Halftime Show, Football Performer, @kurzannn" />
+  <meta name="author" content="Kurzan" />
+  <meta property="og:title" content="KURZAN | Football Freestyler | Performer | Content Creator" />
+  <meta property="og:description" content="More than a game. It's an art. Official portfolio of football freestyler Kurzan." />
+  <meta property="og:image" content="/public/images/kurzan_main.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#030712" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Syne, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#030712',
+            'navy-dark': '#060b18',
+            'navy-surface': '#0a1226',
+            'navy-card': '#0d1830',
+            'navy-glass': 'rgba(10, 18, 38, 0.75)',
+            cyan: {
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              bright: '#00f0ff',
+            },
+            ice: '#e0f2fe',
+          },
+          fontFamily: {
+            display: ['Syne', 'Plus Jakarta Sans', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 7s ease-in-out 2s infinite',
+            'glow-pulse': 'glowPulse 4s ease-in-out infinite',
+            'fadeIn': 'fadeIn 0.3s ease-out forwards',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-12px)' },
+            },
+            glowPulse: {
+              '0%, 100%': { opacity: '0.4' },
+              '50%': { opacity: '0.85' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'scale(0.98)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Futuristic Glass & Grid Styles -->
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #030712;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+
+    /* Ambient Background Glow */
+    body {
+      background-color: #030712;
+      color: #ffffff;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14, 165, 233, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 85% 60%, rgba(56, 189, 248, 0.08), transparent);
+      background-attachment: fixed;
+    }
+
+    /* Subtle Grid Overlay */
+    .bg-tech-grid {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 64px 64px;
+    }
+
+    /* Frosted Glass Cards */
+    .glass-card {
+      background: rgba(10, 18, 38, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.12);
+    }
+
+    /* Glowing Text Gradient */
+    .text-glow-cyan {
+      text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+  </style>
+
+  <!-- React 18 & ReactDOM Production CDNs -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Production App Bundle -->
+  <script defer src="public/bundle.js"></script>
+</head>
+<body class="bg-midnight text-white antialiased selection:bg-cyan-400 selection:text-black">
+
+  <!-- Root App Mount Point -->
+  <div id="root">
+    <!-- Initial High-Tech Loading Screen -->
+    <div id="loader" class="fixed inset-0 bg-midnight z-50 flex flex-col items-center justify-center">
+      <div class="relative w-16 h-16 flex items-center justify-center">
+        <div class="w-14 h-14 rounded-full border-2 border-cyan-500/20 border-t-cyan-400 animate-spin"></div>
+        <span class="absolute font-display font-black text-xs text-white tracking-widest">KZ</span>
+      </div>
+      <div class="mt-4 font-display font-black tracking-[0.3em] text-white text-sm uppercase">
+        KURZAN FREESTYLE
+      </div>
+      <div class="text-[9px] font-mono tracking-widest text-cyan-400/70 mt-1 uppercase">
+        LOADING ATHLETE PORTFOLIO...
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

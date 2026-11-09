@@ -1,0 +1,24 @@
+{
+  "name": "kurzan-freestyle-portfolio",
+  "version": "1.0.0",
+  "description": "Premium Football Freestyle Portfolio Website for KURZAN (@kurzannn)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "kurzan",
+    "freestyle-football",
+    "portfolio",
+    "athlete",
+    "performer",
+    "soccer",
+    "react",
+    "tailwind"
+  ],
+  "author": "Kurzan (@kurzannn)",
+  "license": "MIT"
+}
